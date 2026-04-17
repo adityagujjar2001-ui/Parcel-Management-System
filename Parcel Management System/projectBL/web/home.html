@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Parcel Portal</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+    <header class="page-header">
+        <div class="container">
+            <h1>Homepage</h1>
+            <p>Your account overview and current parcel details.</p>
+            <div id="sessionInfo" class="session-info"></div>
+            <nav class="page-nav">
+                <a href="index.html">Landing</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="book.html">Booking</a>
+                <a href="track.html">Tracking</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Account summary</h2>
+            <div class="summary" id="homeSummary">Loading account details...</div>
+        </section>
+
+        <section class="card">
+            <h2>Quick actions</h2>
+            <div class="grid">
+                <a class="tile" href="book.html">Book New Parcel</a>
+                <a class="tile" href="track.html">Track Booking</a>
+                <a class="tile" href="invoice.html">Generate Invoice</a>
+                <a class="tile" href="parcel-status.html">Parcel Status</a>
+                <a class="tile" href="update-pickup.html">Update Pickup</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
