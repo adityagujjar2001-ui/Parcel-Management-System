@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Parcel Portal</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="register">
+    <header class="page-header">
+        <div class="container">
+            <h1>Register</h1>
+            <p>Create your account to book parcels and track deliveries.</p>
+            <div id="sessionInfo" class="session-info"></div>
+            <nav class="page-nav">
+                <a href="index.html">Landing</a>
+                <a href="login.html">Login</a>
+                <a href="home.html">Homepage</a>
+                <a href="book.html">Booking</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Create account</h2>
+            <form id="registerForm">
+                <label>Customer Name<input name="customerName" required maxlength="50" /></label>
+                <label>Email<input type="email" name="email" required /></label>
+                <label>Country Code<input name="countryCode" required placeholder="91" /></label>
+                <label>Mobile Number<input name="mobileNumber" required maxlength="10" placeholder="10 digits" /></label>
+                <label>Address<textarea name="address" required></textarea></label>
+                <label>Username<input name="userName" required minlength="5" maxlength="20" /></label>
+                <label>Password<input type="password" name="password" required /></label>
+                <label>Confirm Password<input type="password" name="confirmPassword" required /></label>
+                <label>Preferences<textarea name="preferences" placeholder="Delivery preferences (optional)"></textarea></label>
+                <button type="submit">Register</button>
+                <div class="message" id="registerMessage"></div>
+            </form>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

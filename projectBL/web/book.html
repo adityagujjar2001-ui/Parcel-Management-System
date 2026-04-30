@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking | Parcel Portal</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="book">
+    <header class="page-header">
+        <div class="container">
+            <h1>Book a Parcel</h1>
+            <p>Fill in parcel and recipient details to create a new booking.</p>
+            <div id="sessionInfo" class="session-info"></div>
+            <nav class="page-nav">
+                <a href="index.html">Landing</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="home.html">Homepage</a>
+                <a href="track.html">Tracking</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Booking details</h2>
+            <form id="bookForm">
+                <label>Recipient Name<input name="recipientName" required /></label>
+                <label>Recipient Address<textarea name="recipientAddress" required></textarea></label>
+                <label>Recipient Pin<input name="recipientPin" maxlength="6" required /></label>
+                <label>Recipient Mobile<input name="recipientMobile" maxlength="10" required /></label>
+                <label>Weight (grams)<input name="parcelWeightGram" required type="number" step="0.1" /></label>
+                <label>Contents Description<textarea name="parcelContentsDescription" required></textarea></label>
+                <label>Delivery Type<input name="parcelDeliveryType" required placeholder="Standard / Express" /></label>
+                <label>Packing Preference<input name="parcelPackingPreference" optional /></label>
+                <label>Pickup Time<input name="pickupTime" required placeholder="09:00 AM" /></label>
+                <label>Dropoff Time<input name="dropoffTime" required placeholder="05:00 PM" /></label>
+                <label>Service Cost<input name="serviceCost" required type="number" step="0.01" /></label>
+                <button type="submit">Create Booking</button>
+                <div class="message" id="bookMessage"></div>
+            </form>
+            <div class="summary hidden" id="bookingSummary"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

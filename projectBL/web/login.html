@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Parcel Portal</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="login">
+    <header class="page-header">
+        <div class="container">
+            <h1>Login</h1>
+            <p>Access your dashboard and manage parcel bookings.</p>
+            <div id="sessionInfo" class="session-info"></div>
+            <nav class="page-nav">
+                <a href="index.html">Landing</a>
+                <a href="register.html">Register</a>
+                <a href="home.html">Homepage</a>
+                <a href="book.html">Booking</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Sign in</h2>
+            <form id="loginForm">
+                <label>Username<input name="userName" required /></label>
+                <label>Password<input type="password" name="password" required /></label>
+                <button type="submit">Login</button>
+                <div class="message" id="loginMessage"></div>
+            </form>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

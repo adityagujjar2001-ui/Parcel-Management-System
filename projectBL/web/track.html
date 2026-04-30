@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Booking | Parcel Portal</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="track">
+    <header class="page-header">
+        <div class="container">
+            <h1>Track Booking</h1>
+            <p>Enter your booking ID to view the parcel status and delivery details.</p>
+            <div id="sessionInfo" class="session-info"></div>
+            <nav class="page-nav">
+                <a href="index.html">Landing</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="home.html">Homepage</a>
+                <a href="book.html">Booking</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Track your parcel</h2>
+            <form id="trackForm">
+                <label>Booking ID<input name="bookingId" required pattern="\\d+" /></label>
+                <button type="submit">Check status</button>
+                <div class="message" id="trackMessage"></div>
+            </form>
+            <div class="summary hidden" id="trackSummary"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
